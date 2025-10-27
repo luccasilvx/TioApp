@@ -18,7 +18,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies, build and test
-        working-directory: ./front
+        working-directory: src/front
         run: |
           npm ci
           npm run build
