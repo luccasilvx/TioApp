@@ -20,6 +20,6 @@ jobs:
       - name: Install dependencies, build and test
         working-directory: src/front
         run: |
-          npm ci
+          npm install
           npm run build
           npm test
