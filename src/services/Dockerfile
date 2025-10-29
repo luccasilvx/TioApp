@@ -46,7 +46,7 @@ FROM base AS final-api
 WORKDIR /app
 COPY --from=publish-api /app/publish .
 # Configura o ENTRYPOINT para rodar a API na porta 8080
-ENTRYPOINT ["dotnet", "api.dll", "--urls", "http://+:8080"] 
+ENTRYPOINT ["dotnet", "api.dll", "--urls", "http://+:7100"] 
 
 
 # Crie a imagem final para Monitor
